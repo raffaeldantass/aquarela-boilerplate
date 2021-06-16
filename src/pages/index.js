@@ -1,3 +1,7 @@
-export default function Home() {
-  return <p> Oi </p>
-}
+const Home = () => (
+  <>
+    <p> Um Boilerplate fácil e simples </p>
+  </>
+)
+
+export default Home

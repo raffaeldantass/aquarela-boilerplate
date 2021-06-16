@@ -10,6 +10,8 @@ function MyApp({ Component, pageProps }) {
         <link rel="shortcut icon" href="/img/icon-512.png" />
         <link rel="apple-touch-icon" href="/img/icon-512.png" />
         <meta name="description" content="A simple boilerplate" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#ffffff" />
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
