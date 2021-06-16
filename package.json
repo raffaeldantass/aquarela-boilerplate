@@ -6,13 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint src --max-warnings=0",
     "prepare": "husky install",
     "test": "jest"
   },
   "lint-staged": {
     "src/**/*": [
-      "npm lint --fix"
+      "npm run lint"
     ]
   },
   "dependencies": {
@@ -23,6 +23,8 @@
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.5",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
     "babel-jest": "^27.0.2",
     "eslint": "7.28.0",
     "eslint-config-next": "11.0.0",
